@@ -1,11 +1,12 @@
-# mistral-medium.yaml
-#   Configuration for the GT-2 Medium Model.
+# gpt2-small-shuffle_control_nl-randinit.yaml
+#   Configuration for the GPT-2 Small Model.
 ---
 model:
-    id: "mistral-medium"
+    id: "gpt2-small"
 
     # Boolean whether to use the pre-existing Hugging Face AutoTokenizer (or train a new one from scratch)
-    pretrained_tokenizer: true
+    pretrained_tokenizer: false
+    passthrough_tokenizer: true
 
     # Sequence Length
     seq_len: 1024
@@ -16,3 +17,6 @@ model:
 
     # Initialize Weights from File
     initial_weights: null
+    
+    # Configure Model From File
+    config_path:  /local/xiulyang/multilingual-LM/mistral/conf/models/gpt2-small-NL.json

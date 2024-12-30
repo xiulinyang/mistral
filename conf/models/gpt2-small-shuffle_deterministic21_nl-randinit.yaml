@@ -1,15 +1,15 @@
-# mistral-micro.yaml
-#   Configuration for the GPT-2 Micro Model.
+# gpt2-small-shuffle_deterministic21_nl-randinit.yaml
+#   Configuration for the GPT-2 Small Model.
 ---
 model:
-    # this example relies on a user specified config file
     id: "gpt2-small"
 
     # Boolean whether to use the pre-existing Hugging Face AutoTokenizer (or train a new one from scratch)
-    pretrained_tokenizer: true
+    pretrained_tokenizer: false
+    passthrough_tokenizer: true
 
     # Sequence Length
-    seq_len: 256
+    seq_len: 1024
 
     # Stability
     reorder_and_upcast_attn: true
@@ -17,6 +17,6 @@ model:
 
     # Initialize Weights from File
     initial_weights: null
-
+    
     # Configure Model From File
-    config_path: conf/models/mistral-micro.json
+    config_path:  /local/xiulyang/multilingual-LM/mistral/conf/models/gpt2-small-nl.json
