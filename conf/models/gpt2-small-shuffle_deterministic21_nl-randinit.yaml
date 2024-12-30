@@ -19,4 +19,4 @@ model:
     initial_weights: null
     
     # Configure Model From File
-    config_path:  /local/xiulyang/multilingual-LM/mistral/conf/models/gpt2-small-nl.json
+    config_path:  /local/xiulyang/multilingual-LM/mistral/conf/models/gpt2-small-NL.json
